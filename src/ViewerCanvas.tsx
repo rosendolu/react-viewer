@@ -128,7 +128,7 @@ export default function ViewerCanvas(props: ViewerCanvasProps) {
       funcName = 'removeEventListener';
     }
 
-    document[funcName]('click', handleMouseUp, false);
+    document[funcName]('mouseup', handleMouseUp, false); // Changed from 'click' to 'mouseup'
     document[funcName]('mousemove', handleMouseMove, false);
   }
 
